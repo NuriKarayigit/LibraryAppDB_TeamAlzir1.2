@@ -14,11 +14,12 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json",
                 "pretty"
 
+
         },
         features = "src/test/resources/features" ,
         glue = "com/library/steps",
-        dryRun = true,
-        tags = ""
+        dryRun =false,
+        tags = "@db"
 )
 public class CukesRunner {
 
